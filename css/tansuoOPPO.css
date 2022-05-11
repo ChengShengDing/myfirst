@@ -1,0 +1,136 @@
+/* css 重置 */
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+body {
+  background: #fff;
+  font: normal 12px/22px 宋体;
+}
+img,
+video {
+  border: 0;
+  width: 100%;
+  height: 100%;
+}
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+/* 本例子css */
+.picScroll-left {
+  overflow: hidden;
+  position: relative;
+  width: 1312px;
+  left: 5%;
+}
+.picScroll-left .hd {
+  overflow: hidden;
+  height: 80px;
+  padding: 0 10px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.picScroll-left .hd .hd-left {
+  text-align: left;
+  font-size: 36px;
+  line-height: 80px;
+  display: inline-block;
+  box-sizing: border-box;
+}
+.picScroll-left .hd .prev,
+.picScroll-left .hd .next {
+  display: block;
+  width: 50px;
+  height: 50px;
+  float: right;
+  margin-right: 5px;
+  margin-top: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  background: url("../images/arrow.png") 0 0 no-repeat;
+}
+.picScroll-left .hd .next {
+  background-position: 0;
+}
+.picScroll-left .hd .prevStop {
+  background-position: 0;
+}
+.picScroll-left .hd .nextStop {
+  background-position: 0;
+}
+.picScroll-left .hd ul {
+  float: right;
+  overflow: hidden;
+  zoom: 1;
+  margin-top: 10px;
+  zoom: 1;
+}
+.picScroll-left .hd ul li {
+  float: left;
+  width: 9px;
+  height: 30px;
+  overflow: hidden;
+  margin-right: 5px;
+  /* text-indent: -999px; */
+  cursor: pointer;
+  background: url("../images/icoCircle.gif") 0 90px no-repeat;
+}
+.picScroll-left .hd ul li.on {
+  background-position: 0 0;
+}
+.picScroll-left .bd {
+  padding: 10px;
+}
+.picScroll-left .bd ul {
+  overflow: hidden;
+  zoom: 1;
+}
+.picScroll-left .bd ul li {
+  margin: 0 8px;
+  float: left;
+  _display: inline;
+  overflow: hidden;
+  text-align: center;
+}
+.picScroll-left .bd ul li .pic {
+  text-align: center;
+}
+.picScroll-left .bd ul li .pic {
+  width: 420px;
+  /* height: 311px; */
+  display: block;
+}
+.picScroll-left .bd ul li .pic a:hover img {
+  border-color: #999;
+}
+.picScroll-left .bd ul li .title {
+  line-height: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-items: start;
+  align-items: flex-start;
+}
+.picScroll-left .bd ul li .title .discover-title {
+  font-family: "OPPOSans-Ver2-Medium";
+  font-variation-settings: "wght" 750;
+  font-size: 20px;
+  line-height: 30px;
+  padding: 8px 0;
+}
+.picScroll-left .bd ul li .title .discover-intro {
+  font-size: 14px;
+  line-height: 24px;
+  max-width: 100%;
+  word-wrap: break-word;
+}
+.picScroll-left .bd ul li .title .learn-more {
+  display: inline-block;
+  padding-top: 8px;
+  height: 24px;
+  border-bottom: 1px solid #000;
+}

@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/content.css">
+    <link rel="stylesheet" href="./css/tansuoOPPO.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_3386337_2iqz7q3v6cc.css">
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+    <script src="./js/jquery1.42.min.js"></script>
+    <script src="./js/jquery.SuperSlide.2.1.3.js"></script>
+
+</head>
+
+<body>
+
+    <!-- 头 -->
+    <header id="header-out">
+        <div id="header">
+            <nav class="oh-nav">
+                <a href="https://www.oppo.com/cn/" class="nav-logo" tm-eventlabel="Oppo logo">OPPO</a>
+            </nav>
+            <div class="header-center">
+                <ul class="first" id=".show">
+                    <li>手机</li>
+                    <li>智能硬件</li>
+                    <li>官方商城</li>
+                    <li>关于OPPO</li>
+                    <li>ColorOS</li>
+                    <li>服务</li>
+                    <li>企业业务</li>
+                </ul>
+            </div>
+            <div class="header-right">
+                <div class="iconfont icon-sousuo"></div>
+                <div class="iconfont icon-24gl-bag"></div>
+                <div class="iconfont icon-touxiang" onclick="showInfo()">
+                    <ul class="dropdown">
+                        <li class="sign-in">
+                            <a
+                                href="https://id.oppo.com/index.html?callback=https%3A%2F%2Fwww.oppo.com%2Fcn%2F&amp;language=zh-CN">登录</a>
+                        </li>
+                        <li class="sign-up">
+                            <a
+                                href="https://id.oppo.com/register.html?callback=https%3A%2F%2Fwww.oppo.com%2Fcn%2F&amp;language=zh-CN">注册</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- 下拉框 -->
+        <div id="slideBox" class="slideBox">
+            <div class="hd">
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+            <div class="bd">
+                <ul>
+                    <li><a href="oppo.com/cn/proposal/" target="_blank"><img
+                                src="https://image.oppo.com/content/dam/oppo/common/mkt/v2-2/proposal/topbanner/proposal-topbanner-cn-pc-v2.jpg?" /></a>
+                    </li>
+                    <li><a href="http://www.SuperSlide2.com" target="_blank"><img
+                                src="https://image.oppo.com/content/dam/oppo/common/mkt/v2-2/find-x5-pro/topbanner/find-x5-pro-topbanner-pc-v5.jpg.thumb.webp" /></a>
+                    </li>
+                    <li><a href="http://www.SuperSlide2.com" target="_blank"><img
+                                src="https://image.oppo.com/content/dam/oppo/common/mkt/v2-2/k10-pro/topbanner/k10-pro-topbanner-pc-v2.jpg.thumb.webp" /></a>
+                    </li>
+                    <li><a href="http://www.SuperSlide2.com" target="_blank"><img
+                                src="https://image.oppo.com/content/dam/oppo/common/mkt/v2-2/find-n/topbanner/Find-n-topbanner-black-pc-v3.jpg.thumb.webp" /></a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- 下面是前/后按钮代码，如果不需要删除即可 -->
+            <a class="prev" href="javascript:void(0)"></a>
+            <a class="next" href="javascript:void(0)"></a>
+
+        </div>
+
+        <script>
+            //   左右切换
+            jQuery(".slideBox").slide({
+                mainCell: ".bd ul",
+                autoPlay: true
+            });
+        </script>
+    </header>
+
+    <!-- neirong -->
+
+    <div id="content">
+        <!-- tou -->
+        <div class="content-top">
+            <p class="content-top-title">更多新品</p>
+            <p class="content-top-link"><a href="https://www.oppo.com/cn/smartphones/" target="_blank">
+                    查看其它产品
+                </a></p>
+        </div>
+        <!-- 商品 -->
+        <div id="content-middle">
+            <div class="content-middle-left">
+                <a href="https://www.oppo.com/cn/accessories/oppo-air-glass/">
+                    <div class="img-box">
+                        <img class="lazyload mobile mobile-bg"
+                            data-src="//image.oppo.com/content/dam/oppo/common/mkt/v2-2/air-glass/middlebanner/air-glass-black_middlebanner-640x480-mobile.jpg.thumb.webp"
+                            alt="OPPO Air Glass" data-src-webp="true">
+                        <img class="gt-mb ls-is-cached lazyloaded"
+                            data-src="//image.oppo.com/content/dam/oppo/common/mkt/v2-2/air-glass/middlebanner/air-glass-black_middlebanner-1340x1786-pc.jpg.thumb.webp"
+                            alt="OPPO Air Glass" data-src-webp="true"
+                            src="//image.oppo.com/content/dam/oppo/common/mkt/v2-2/air-glass/middlebanner/air-glass-black_middlebanner-1340x1786-pc.jpg.thumb.webp">
+                    </div>
+                </a>
+                <h2 class="title">
+                    <a href="https://www.oppo.com/cn/accessories/oppo-air-glass/">OPPO Air Glass </a>
+                    <span class="tag" style="color:#2EC84E;">新品</span>
+                </h2>
+                <h3 class="desc">新一代智能眼镜</h3>
+                <div class="actions">
+                    <a href="https://www.oppo.com/cn/accessories/oppo-air-glass/" class="learn-more">了解更多</a>
+                    <a href="https://www.opposhop.cn/cn/web/products/6241.html?utm_source=guanwang&amp;utm_medium=oppo-air-glass&amp;utm_page=homepage&amp;utm_site=bottombanner&amp;download_app=0"
+                        class="buy" target="_blank">立即购买</a>
+                </div>
+            </div>
+            <div class="content-middle-right">
+                <div class="item item-first">
+                    <a href="https://www.oppo.com/cn/smartphones/series-k/k10/">
+                        <div class="img-box reno2-img-box">
+                            <img class="lazyload mobile mobile-bg"
+                                data-src="//image.oppo.com/content/dam/oppo/common/mkt/v2-2/k10-cn/middlebanner/k10-middlebanner-640x480-v3.jpg.thumb.webp"
+                                alt="OPPO K10" data-src-webp="true">
+                            <img class="gt-mb ls-is-cached lazyloaded"
+                                data-src="//image.oppo.com/content/dam/oppo/common/mkt/v2-2/k10-cn/middlebanner/k10-middlebanner-1600x1068-v3.jpg.thumb.webp"
+                                alt="OPPO K10" data-src-webp="true"
+                                src="//image.oppo.com/content/dam/oppo/common/mkt/v2-2/k10-cn/middlebanner/k10-middlebanner-1600x1068-v3.jpg.thumb.webp">
+                        </div>
+                    </a>
+                    <h2 class="title">
+                        <a href="https://www.oppo.com/cn/smartphones/series-k/k10/">OPPO K10 </a>
+                        <span class="tag" style="color:#2EC84E;">新品</span>
+                    </h2>
+                    <h3 class="desc">超次元游戏旗舰，超玩炸场</h3>
+                    <div class="actions">
+                        <a href="https://www.oppo.com/cn/smartphones/series-k/k10/" class="learn-more">了解更多</a>
+                        <a href="https://www.opposhop.cn/cn/web/products/6856.html?utm_source=guanwang&amp;utm_medium=k10&amp;utm_page=homepage&amp;utm_site=bottombanner&amp;download_app=0"
+                            class="buy" target="_blank">立即购买</a>
+                    </div>
+                </div>
+                <div class="item">
+                    <a href="https://www.oppo.com/cn/accessories/oppo-enco-air2-pro/">
+                        <div class="img-box reno2-img-box">
+                            <img class="lazyload mobile mobile-bg"
+                                data-src="//image.oppo.com/content/dam/oppo/common/mkt/v2-2/enco-air2-pro/middlebanner/gray_middlebanner-640x480-mobile.jpg.thumb.webp"
+                                alt="OPPO Enco Air2 Pro" data-src-webp="true">
+                            <img class="gt-mb ls-is-cached lazyloaded"
+                                data-src="//image.oppo.com/content/dam/oppo/common/mkt/v2-2/enco-air2-pro/middlebanner/gray_middlebanner-1600x1068-pc.jpg.thumb.webp"
+                                alt="OPPO Enco Air2 Pro" data-src-webp="true"
+                                src="//image.oppo.com/content/dam/oppo/common/mkt/v2-2/enco-air2-pro/middlebanner/gray_middlebanner-1600x1068-pc.jpg.thumb.webp">
+                        </div>
+                    </a>
+                    <h2 class="title">
+                        <a href="https://www.oppo.com/cn/accessories/oppo-enco-air2-pro/">
+                            OPPO Enco Air2 Pro
+                        </a>
+                        <span class="tag" style="color:#2EC84E;">新品</span>
+                    </h2>
+                    <h3 class="desc">让「现在」更静，离「现场」更近</h3>
+                    <div class="actions">
+                        <a href="https://www.oppo.com/cn/accessories/oppo-enco-air2-pro/" class="learn-more">了解更多</a>
+                        <a href="https://www.opposhop.cn/cn/web/products/6711.html?utm_source=guanwang&amp;utm_medium=oppo-enco-air2-pro&amp;utm_page=homepage&amp;utm_site=bottombanner&amp;download_app=0"
+                            class="buy" target="_blank">立即购买</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- oppo 科技 -->
+    <div id="content-middle-container-out">
+        <div id="content-middle-container">
+            <div class="container-header">OPPO科技</div>
+            <div class="product-card-content">
+                <div class="wide">
+                    <a href="https://www.oppo.com/cn/marisilicon-x/">
+                        <div class="img-box">
+                            <!-- <img class="lazyload mobile mobile-bg"
+                                    data-src="//image.oppo.com/content/dam/oppo/common/mkt/v2-2/marisilicon-x/middlebanner/marisilicon-x_middlebanner-640x480-mobile-v2.jpg.thumb.webp"
+                                    alt="马里亚纳®MariSilicon X" data-src-webp="true"> -->
+                            <img class="gt-mb ls-is-cached lazyloaded"
+                                data-src="//image.oppo.com/content/dam/oppo/common/mkt/v2-2/marisilicon-x/middlebanner/marisilicon-x_middlebanner-1600x1068-pc-v2.jpg.thumb.webp"
+                                alt="马里亚纳®MariSilicon X" data-src-webp="true"
+                                src="//image.oppo.com/content/dam/oppo/common/mkt/v2-2/marisilicon-x/middlebanner/marisilicon-x_middlebanner-1600x1068-pc-v2.jpg.thumb.webp">
+                        </div>
+                    </a>
+                    <h2 class="title">
+                        <a href="https://www.oppo.com/cn/marisilicon-x/">马里亚纳®MariSilicon X </a>
+                    </h2>
+                    <h3 class="desc">OPPO 首个自研芯片，全球第一个 6nm 影像专用的 NPU 芯片</h3>
+                    <div class="actions">
+                        <a href="https://www.oppo.com/cn/marisilicon-x/" class="learn-more">了解更多</a>
+                    </div>
+                </div>
+                <div class="narrow">
+                    <a href="https://www.oppo.com/cn/discover/technology/5g/">
+                        <div class="img-box">
+                            <!-- <img class="lazyload mobile mobile-bg"
+                                    data-src="//image.oppo.com/content/dam/oppo/common/mkt/v2-2/technology/middlebanner/5g-middlebanner-640x480-v2-mobile.jpg.thumb.webp"
+                                    alt="5G，连接身边的世界" data-src-webp="true"> -->
+                            <img class="gt-mb  bg bg-pc ls-is-cached lazyloaded"
+                                data-src="//image.oppo.com/content/dam/oppo/common/mkt/v2-2/technology/middlebanner/5g-middlebanner-1340x1786-v3-pc.jpg.thumb.webp"
+                                alt="5G，连接身边的世界" data-src-webp="true"
+                                src="//image.oppo.com/content/dam/oppo/common/mkt/v2-2/technology/middlebanner/5g-middlebanner-1340x1786-v3-pc.jpg.thumb.webp">
+                        </div>
+                    </a>
+                    <h2 class="title">
+                        <a href="https://www.oppo.com/cn/discover/technology/5g/">5G，连接身边的世界 </a>
+                    </h2>
+                    <h3 class="desc">OPPO 相信 5G 不止是一种技术，更代表着无限可能</h3>
+                    <div class="actions">
+                        <a href="https://www.oppo.com/cn/discover/technology/5g/" class="learn-more">了解更多</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <!-- 探索OPPO -->
+    <div class="opDiscoverCpGarlly" style="background-color: #E0E8EA;">
+        <div class="picScroll-left">
+            <div class="hd">
+                <p class="hd-left">探索OPPO</p>
+                <div class="hd-right">
+                    <a href="javascript:;" class="disnext-arrow next" tm-eventcategory="Homepage"
+                        tm-eventaction="Discovery_new" tm-eventlabel="Backward" tabindex="0" role="button"
+                        aria-label="Next slide" aria-disabled="false">
+                        <svg width="32" height="33" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M32 16.5C32 7.71199 24.8694 0.5 16 0.5C7.13059 0.5 0 7.71199 0 16.5C0 25.288 7.13059 32.5 16 32.5C24.8694 32.5 32 25.288 32 16.5ZM1.3617 16.5C1.3617 8.43482 7.91176 1.8617 16 1.8617C24.0882 1.8617 30.6383 8.43482 30.6383 16.5C30.6383 24.5652 24.0882 31.1383 16 31.1383C7.91176 31.1383 1.3617 24.5652 1.3617 16.5ZM19.1623 18.7097C18.8964 18.9756 18.8964 19.4067 19.1623 19.6726C19.4282 19.9385 19.8593 19.9385 20.1252 19.6726L23.33 16.4677L20.1252 13.2629C19.8593 12.997 19.4282 12.997 19.1623 13.2629C18.8964 13.5288 18.8964 13.9599 19.1623 14.2258L20.7852 15.8486H9.43046C9.05443 15.8486 9.05443 17.2103 9.43046 17.2103H20.6617L19.1623 18.7097Z"
+                                fill="black"></path>
+                        </svg>
+                    </a>
+                    <a href="javascript:;" class="disprev-arrow swiper-button-disabled prev" tm-eventcategory="Homepage"
+                        tm-eventaction="Discovery_new" tm-eventlabel="Forward" tabindex="-1" role="button"
+                        aria-label="Previous slide" aria-disabled="true">
+                        <svg width="32" height="33" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M1.90735e-06 16.5C1.90735e-06 7.71199 7.13059 0.5 16 0.5C24.8694 0.5 32 7.71199 32 16.5C32 25.288 24.8694 32.5 16 32.5C7.13059 32.5 1.90735e-06 25.288 1.90735e-06 16.5ZM30.6383 16.5C30.6383 8.43482 24.0882 1.8617 16 1.8617C7.91176 1.8617 1.3617 8.43482 1.3617 16.5C1.3617 24.5652 7.91176 31.1383 16 31.1383C24.0882 31.1383 30.6383 24.5652 30.6383 16.5ZM12.8377 18.7097C13.1036 18.9756 13.1036 19.4067 12.8377 19.6726C12.5718 19.9385 12.1407 19.9385 11.8748 19.6726L8.66999 16.4677L11.8748 13.2629C12.1407 12.997 12.5718 12.997 12.8377 13.2629C13.1036 13.5288 13.1036 13.9599 12.8377 14.2258L11.2148 15.8486H22.5695C22.9456 15.8486 22.9456 17.2103 22.5695 17.2103H11.3383L12.8377 18.7097Z"
+                                fill="black"></path>
+                        </svg>
+                    </a>
+                </div>
+
+                <!-- <span class="pageState">探索OPPO</span> -->
+            </div>
+            <div class="bd">
+                <ul class="picList">
+                    <li>
+                        <div class="pic"><a href="http://www.SuperSlide2.com" target="_blank"><img
+                                    src="https://image.oppo.com/content/dam/oppo/cn/mkt/homepage/discovery/v2/discovery-coloros-kid-space-pc-v2.jpg.thumb.webp" /></a>
+                        </div>
+                        <div class="title">
+                            <p class="discover-title" style="color:#000000;">我的怪兽伙伴插画征集</p>
+                            <p class="discover-intro" style="color:#000000;">拿起画笔，为你的怪兽伙伴创作形象和故事</p>
+                            <div class="learn-more" tm-eventcategory="Homepage" tm-eventaction="Discovery_new"
+                                tm-eventlabel="我的怪兽伙伴插画征集+立即投稿">
+                                <a href="https://www.oppo.com/cn/events/coloros-kid-space/">立即投稿</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="pic"><a href="http://www.SuperSlide2.com" target="_blank"><img
+                                    src="https://image.oppo.com/content/dam/oppo/cn/mkt/homepage/discovery/v2/discovery-met-wallpaper-download-pc-v3.jpg.thumb.webp" /></a>
+                        </div>
+                        <div class="title">
+                            <p class="discover-title" style="color:#000000;">OPPO Pad 大都会联名壁纸</p>
+                            <p class="discover-intro" style="color:#000000;">即刻开启艺术畅想，携手大师探索灵感</p>
+                            <div class="learn-more" tm-eventcategory="Homepage" tm-eventaction="Discovery_new"
+                                tm-eventlabel="OPPO Pad 大都会联名壁纸+立即探索">
+                                <a
+                                    href="https://www.oppo.com/cn/accessories/oppo-pad/the-met-wallpaper-download/">立即探索</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="pic"><a href="http://www.SuperSlide2.com" target="_blank"><img
+                                    src="https://image.oppo.com/content/dam/oppo/cn/mkt/homepage/discovery/v2/discovery-how-to-pc.jpg.thumb.webp" /></a>
+                        </div>
+                        <div class="title">
+                            <p class="discover-title" style="color:#000000;">OPPO 使用技巧</p>
+                            <p class="discover-intro" style="color:#000000;">一切尽在 OPPO 使用技巧，给你更多玩机体验</p>
+                            <div class="learn-more" tm-eventcategory="Homepage" tm-eventaction="Discovery_new"
+                                tm-eventlabel="OPPO 使用技巧+了解更多">
+                                <a href="https://www.oppo.com/cn/how-to/">了解更多</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="pic"><a href="http://www.SuperSlide2.com" target="_blank"><video
+                                    src="https://www.oppo.com/content/dam/oppo/cn/mkt/homepage/discovery/v2/discovery-find-x5-video-v2.mp4"></video></a>
+                        </div>
+                        <div class="title">
+                            <p class="discover-title" style="color:#000000;">OPPO Find X5 系列 新品发布会</p>
+                            <p class="discover-intro" style="color:#000000;">一帧影像，动用两块芯片</p>
+                            <div class="learn-more" tm-eventcategory="Homepage" tm-eventaction="Discovery_new"
+                                tm-eventlabel="OPPO Find X5 系列 新品发布会+精彩回顾">
+                                <a href="https://www.oppo.com/cn/events/find-x5-series-launch/">精彩回顾</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="pic"><a href="http://www.SuperSlide2.com" target="_blank"><video
+                                    src="https://www.oppo.com/content/dam/oppo/cn/mkt/homepage/discovery/v2/Reno6-pro-conan-universe-v2-pc-v2.mp4"></video></a>
+                        </div>
+                        <div class="title">
+                            <p class="discover-title" style="color:#000000;">Reno6 Pro＋柯南限定版 红色羁绊</p>
+                            <p class="discover-intro" style="color:#000000;">主题曲：ZARD「转动命运之轮」</p>
+                            <div class="learn-more" tm-eventcategory="Homepage" tm-eventaction="Discovery_new"
+                                tm-eventlabel="Reno6 Pro＋柯南限定版 红色羁绊+观看视频">
+                                <a
+                                    href="https://www.oppo.com/content/dam/oppo/product-asset-library/reno/reno6-cn/reno6proplus-conan/v1/assets/highlights-46f991.mp4">观看视频</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="pic"><a href="http://www.SuperSlide2.com" target="_blank"><img
+                                    src="https://image.oppo.com/content/dam/oppo/cn/mkt/homepage/discovery/v2/2121-universe-v3-pc.jpg.thumb.webp" /></a>
+                        </div>
+                        <div class="title">
+                            <p class="discover-title" style="color:#000000;">2121 未来影像</p>
+                            <p class="discover-intro" style="color:#000000;">#为明天留住今天#</p>
+                            <div class="learn-more" tm-eventcategory="Homepage" tm-eventaction="Discovery_new"
+                                tm-eventlabel="2121 未来影像+了解更多">
+                                <a href="https://events.oppo.com/cn/see-beyond/">了解更多</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="pic"><a href="http://www.SuperSlide2.com" target="_blank"><img
+                                    src="https://image.oppo.com/content/dam/oppo/cn/mkt/homepage/discovery/v2/discovery-01.jpg.thumb.webp" /></a>
+                        </div>
+                        <div class="title">
+                            <p class="discover-title" style="color:#000000;">线下体验店</p>
+                            <p class="discover-intro" style="color:#000000;">查找附近 OPPO 体验店，了解更多会员权益</p>
+                            <div class="learn-more" tm-eventcategory="Homepage" tm-eventaction="Discovery_new"
+                                tm-eventlabel="线下体验店+了解更多">
+                                <a href="https://www.oppo.com/cn/offline-stores/">了解更多</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="pic"><a href="http://www.SuperSlide2.com" target="_blank"><img
+                                    src="https://image.oppo.com/content/dam/oppo/cn/mkt/homepage/discovery/v2/discovery-02.jpg.thumb.webp" /></a>
+                        </div>
+                        <div class="title">
+                            <p class="discover-title" style="color:#000000;">O学堂</p>
+                            <p class="discover-intro" style="color:#000000;">立即报名摄影课程，一起发现生活中的美</p>
+                            <div class="learn-more" tm-eventcategory="Homepage" tm-eventaction="Discovery_new"
+                                tm-eventlabel="O学堂+了解更多">
+                                <a href="https://support.oppo.com/cn/oschool-home/">了解更多</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="pic"><a href="http://www.SuperSlide2.com" target="_blank"><img
+                                    src="https://image.oppo.com/content/dam/oppo/cn/mkt/homepage/discovery/v2/discovery-03.jpg.thumb.webp" /></a>
+                        </div>
+                        <div class="title">
+                            <p class="discover-title" style="color:#000000;">会员日</p>
+                            <p class="discover-intro" style="color:#000000;">参与每月 16-18 日会员日活动</p>
+                            <div class="learn-more" tm-eventcategory="Homepage" tm-eventaction="Discovery_new"
+                                tm-eventlabel="会员日+了解更多">
+                                <a href="https://support.oppo.com/cn/serviceday/">了解更多</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="pic"><a href="http://www.SuperSlide2.com" target="_blank"><video
+                                    src="https://www.oppo.com/content/dam/oppo/cn/mkt/homepage/discovery/v2/kv-video-cover-5.mp4" /></a>
+                        </div>
+                        <div class="title">
+                            <p class="discover-title" style="color:#000000;">万物互融</p>
+                            <p class="discover-intro" style="color:#000000;">OPPO 随享，美好生活随时分享</p>
+                            <div class="learn-more" tm-eventcategory="Homepage" tm-eventaction="Discovery_new"
+                                tm-eventlabel="万物互融+了解更多">
+                                <a href="https://www.oppo.com/cn/events/iot/">了解更多</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="pic"><a href="http://www.SuperSlide2.com" target="_blank"><img
+                                    src="https://image.oppo.com/content/dam/oppo/cn/mkt/homepage/discovery/v2/discovery-05.jpg.thumb.webp" /></a>
+                        </div>
+                        <div class="title">
+                            <p class="discover-title" style="color:#000000;">留住消失的色彩</p>
+                            <p class="discover-intro" style="color:#000000;">与国家地理深度合作，致力保护濒危物种</p>
+                            <div class="learn-more" tm-eventcategory="Homepage" tm-eventaction="Discovery_new"
+                                tm-eventlabel="留住消失的色彩+了解更多">
+                                <a href="https://events.oppo.com/cn/endangered-colour/">了解更多</a>
+                            </div>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+        <script>
+            jQuery(".picScroll-left").slide({
+                titCell: ".hd ul",
+                mainCell: ".bd ul",
+                autoPage: true,
+                effect: "left",
+                vis: 3,
+                trigger: "click"
+            })
+        </script>
+    </div>
+
+    <!-- footer -->
+    <span>
+        <section class="light-theme">
+            <footer id="footer">
+                <section class="main">
+                    <nav class="nav">
+                        <dl class="opened">
+                            <dt>推荐产品</dt>
+
+                            <dd><a href="https://www.oppo.com/cn/smartphones/series-find-n/find-n/" target="_blank">Find
+                                    N</a></dd>
+                            <dd><a href="https://www.oppo.com/cn/smartphones/series-find-x/find-x5-pro/"
+                                    target="_blank">Find X5 系列</a></dd>
+
+
+                            <dd><a href="https://www.oppo.com/cn/smartphones/series-reno/reno7-pro-5g/"
+                                    target="_blank">Reno7 系列</a></dd>
+
+
+                            <dd><a href="https://www.oppo.com/cn/smartphones/series-a/a96/" target="_blank">A96</a></dd>
+
+
+                            <dd><a href="https://www.oppo.com/cn/smartphones/series-k/k10-pro/" target="_blank">K10
+                                    Pro</a></dd>
+
+
+                            <dd><a href="https://www.oppo.com/cn/accessories/oppo-pad/" target="_blank">OPPO Pad</a>
+                            </dd>
+
+
+                            <dd><a href="https://www.oppo.com/cn/smartphones/" target="_blank">查看全部手机</a></dd>
+
+
+                            <dd><a href="https://www.oppo.com/cn/accessories/" target="_blank">查看全部智能硬件</a></dd>
+
+
+                            <div class="cp-plus-minus-btns">
+                                <a class="dark-btn expand-btn" href="javascript:;">
+                                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAWklEQVRYR+2VSw4AMAQFuWwP1dN224iUsNDF2CJexk9l2HS4viAAAh0Cywzwrgw0AiAAga8J2D2vrPmd496JFwEEjBOIes4vgAAEIBDdiZS/8w1TBaIgBEDgAOMfFCGaPiXJAAAAAElFTkSuQmCC"
+                                        alt="expand">
+                                </a>
+                                <a class="dark-btn collapse-btn" href="javascript:;">
+                                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAA4klEQVRYR+2W0Q3CMAxErwMwRRfgiwEYnAH6xQJMwQAgVzIKKInvIiGDlP7W9r04FycLkr8lWR8TYHaA6cARwB3ATTTsCuAA4NrLiwBM/ATgAeAiQJj4GdhNvvUgegAu7gtgIUpxz21C9ABqhSIIOSfaAqWgEvuyRQRggUxhJqbqRQYggrD/bjjVL9Iobq3SRMuFRD556wTbAU+qQZQFJfFPcnbOtCBk8b8ESN2CVBP2zvnXjyEzZJiYoUGkFFZiqVE8UlDO+enr2NqU+iDxfUp9krHjeThOvYyGhVqJE2B24An0fVwhA2PqXQAAAABJRU5ErkJggg=="
+                                        alt="collapse">
+                                </a>
+                                <a class="light-btn expand-btn" href="javascript:;">
+                                    <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBzdGFuZGFsb25lPSJubyI/PjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+PHN2ZyB0PSIxNTc1OTc3OTEzNTkxIiBjbGFzcz0iaWNvbiIgdmlld0JveD0iMCAwIDEwMjQgMTAyNCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHAtaWQ9IjMzMjUiIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCI+PGRlZnM+PHN0eWxlIHR5cGU9InRleHQvY3NzIj48L3N0eWxlPjwvZGVmcz48cGF0aCBkPSJNNDY5LjMzMyAyMTMuMzMzbDg1LjMzMyAwIDAgNTk3LjMzMy04NS4zMzMgMCAwLTU5Ny4zMzN6TTIxMy4zMzMgNDY5LjMzM2w1OTcuMzMzIDAgMCA4NS4zMzMtNTk3LjMzMyAwIDAtODUuMzMzeiIgcC1pZD0iMzMyNiIgZmlsbD0iI2I3YjdiNyI+PC9wYXRoPjwvc3ZnPg=="
+                                        alt="expand">
+                                </a>
+                                <a class="light-btn collapse-btn" href="javascript:;">
+                                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAA+UlEQVRYR+2WwRECMQhFPwVYhQ14sgALtwBPNmAVFoCTNXFiZkOAmSx72D0n+x8fCBCCPwrWxwFwODB0gJkvAN5E9LIULDOfAZyI6CndEwGy+BUAA7hrIbL4DViK/CFBdAEq8RKACqIRL3e7EBJAsrBEoYLoiIvgoxSoITziKSpNEQ4hvOIqgHRIEsi5MaWq7oqhA7/kf9tqTagNRFWs5b9qAMGJOiCTuDoFfwrrTix8lrfC5cDAhfkAnWLcJgVCJ8wvwtA21DwymjO9ibjfp9gTlefOfsdx7vm0DcUsJNUMiFvJLDug96xpGHlF3EvpDMH2n4cD4Q58AK/SvCE5v4JLAAAAAElFTkSuQmCC"
+                                        alt="collapse">
+                                </a>
+                            </div>
+
+                        </dl>
+
+                        <dl>
+                            <dt>购买渠道</dt>
+
+                            <dd><a href="https://www.oppo.com/cn/offline-stores/" target="_blank">线下体验店</a></dd>
+
+
+                            <dd><a href="https://www.heytap.com/cn/web/topic/700100.html?utm_source=guanwang&amp;utm_medium=heytap&amp;utm_site=footer"
+                                    target="_blank">OPPO 商城</a></dd>
+
+
+                            <dd><a href="https://www.oppo.com/cn/online_store/" target="_blank">官方授权网店</a></dd>
+
+
+                            <div class="cp-plus-minus-btns">
+                                <a class="dark-btn expand-btn" href="javascript:;">
+                                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAWklEQVRYR+2VSw4AMAQFuWwP1dN224iUsNDF2CJexk9l2HS4viAAAh0Cywzwrgw0AiAAga8J2D2vrPmd496JFwEEjBOIes4vgAAEIBDdiZS/8w1TBaIgBEDgAOMfFCGaPiXJAAAAAElFTkSuQmCC"
+                                        alt="expand">
+                                </a>
+                                <a class="dark-btn collapse-btn" href="javascript:;">
+                                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAA4klEQVRYR+2W0Q3CMAxErwMwRRfgiwEYnAH6xQJMwQAgVzIKKInvIiGDlP7W9r04FycLkr8lWR8TYHaA6cARwB3ATTTsCuAA4NrLiwBM/ATgAeAiQJj4GdhNvvUgegAu7gtgIUpxz21C9ABqhSIIOSfaAqWgEvuyRQRggUxhJqbqRQYggrD/bjjVL9Iobq3SRMuFRD556wTbAU+qQZQFJfFPcnbOtCBk8b8ESN2CVBP2zvnXjyEzZJiYoUGkFFZiqVE8UlDO+enr2NqU+iDxfUp9krHjeThOvYyGhVqJE2B24An0fVwhA2PqXQAAAABJRU5ErkJggg=="
+                                        alt="collapse">
+                                </a>
+                                <a class="light-btn expand-btn" href="javascript:;">
+                                    <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBzdGFuZGFsb25lPSJubyI/PjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+PHN2ZyB0PSIxNTc1OTc3OTEzNTkxIiBjbGFzcz0iaWNvbiIgdmlld0JveD0iMCAwIDEwMjQgMTAyNCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHAtaWQ9IjMzMjUiIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCI+PGRlZnM+PHN0eWxlIHR5cGU9InRleHQvY3NzIj48L3N0eWxlPjwvZGVmcz48cGF0aCBkPSJNNDY5LjMzMyAyMTMuMzMzbDg1LjMzMyAwIDAgNTk3LjMzMy04NS4zMzMgMCAwLTU5Ny4zMzN6TTIxMy4zMzMgNDY5LjMzM2w1OTcuMzMzIDAgMCA4NS4zMzMtNTk3LjMzMyAwIDAtODUuMzMzeiIgcC1pZD0iMzMyNiIgZmlsbD0iI2I3YjdiNyI+PC9wYXRoPjwvc3ZnPg=="
+                                        alt="expand">
+                                </a>
+                                <a class="light-btn collapse-btn" href="javascript:;">
+                                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAA+UlEQVRYR+2WwRECMQhFPwVYhQ14sgALtwBPNmAVFoCTNXFiZkOAmSx72D0n+x8fCBCCPwrWxwFwODB0gJkvAN5E9LIULDOfAZyI6CndEwGy+BUAA7hrIbL4DViK/CFBdAEq8RKACqIRL3e7EBJAsrBEoYLoiIvgoxSoITziKSpNEQ4hvOIqgHRIEsi5MaWq7oqhA7/kf9tqTagNRFWs5b9qAMGJOiCTuDoFfwrrTix8lrfC5cDAhfkAnWLcJgVCJ8wvwtA21DwymjO9ibjfp9gTlefOfsdx7vm0DcUsJNUMiFvJLDug96xpGHlF3EvpDMH2n4cD4Q58AK/SvCE5v4JLAAAAAElFTkSuQmCC"
+                                        alt="collapse">
+                                </a>
+                            </div>
+
+                        </dl>
+
+                        <dl>
+                            <dt>探索精彩 OPPO</dt>
+
+                            <dd><a href="https://www.oppo.com/cn/about/" target="_blank">关于 OPPO</a></dd>
+
+
+                            <dd><a href="https://www.oppo.com/cn/newsroom/" target="_blank">新闻中心</a></dd>
+
+
+                            <dd><a href="https://www.oppo.cn/" target="_blank">OPPO 社区</a></dd>
+
+
+                            <dd><a href="https://sc.hotjob.cn/wt/OPPO/web/index?brandCode=1" target="_blank">加入我们</a>
+                            </dd>
+
+
+                            <dd><a href="https://www.oppo.com/cn/patent/" target="_blank">知识产权</a></dd>
+
+
+                            <dd><a href="https://www.oppo.com/content/dam/oppo/common/mkt/footer/2021-OPPO-Sustainability-Report-CN.pdf"
+                                    target="_blank">可持续发展报告</a></dd>
+
+
+
+                            <dd><a class="footer-quick-link"
+                                    data-mb-href="https://www.oppo.com/cn/events/intelligent-lifestyle/"
+                                    data-pc-href="https://www.oppo.com/cn/events/intelligent-lifestyle/"
+                                    href="https://www.oppo.com/cn/events/intelligent-lifestyle/" target="_blank"
+                                    rel="nofollow">智慧生活2030报告</a></dd>
+
+                            <dd><a href="https://privacy.oppo.com/cn/overview/" target="_blank">安全隐私</a></dd>
+
+
+                            <dd><a href="http://dev.ibreeno.com/index" target="_blank" rel="nofollow">小布开发者平台</a></dd>
+
+
+                            <div class="cp-plus-minus-btns">
+                                <a class="dark-btn expand-btn" href="javascript:;">
+                                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAWklEQVRYR+2VSw4AMAQFuWwP1dN224iUsNDF2CJexk9l2HS4viAAAh0Cywzwrgw0AiAAga8J2D2vrPmd496JFwEEjBOIes4vgAAEIBDdiZS/8w1TBaIgBEDgAOMfFCGaPiXJAAAAAElFTkSuQmCC"
+                                        alt="expand">
+                                </a>
+                                <a class="dark-btn collapse-btn" href="javascript:;">
+                                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAA4klEQVRYR+2W0Q3CMAxErwMwRRfgiwEYnAH6xQJMwQAgVzIKKInvIiGDlP7W9r04FycLkr8lWR8TYHaA6cARwB3ATTTsCuAA4NrLiwBM/ATgAeAiQJj4GdhNvvUgegAu7gtgIUpxz21C9ABqhSIIOSfaAqWgEvuyRQRggUxhJqbqRQYggrD/bjjVL9Iobq3SRMuFRD556wTbAU+qQZQFJfFPcnbOtCBk8b8ESN2CVBP2zvnXjyEzZJiYoUGkFFZiqVE8UlDO+enr2NqU+iDxfUp9krHjeThOvYyGhVqJE2B24An0fVwhA2PqXQAAAABJRU5ErkJggg=="
+                                        alt="collapse">
+                                </a>
+                                <a class="light-btn expand-btn" href="javascript:;">
+                                    <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBzdGFuZGFsb25lPSJubyI/PjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+PHN2ZyB0PSIxNTc1OTc3OTEzNTkxIiBjbGFzcz0iaWNvbiIgdmlld0JveD0iMCAwIDEwMjQgMTAyNCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHAtaWQ9IjMzMjUiIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCI+PGRlZnM+PHN0eWxlIHR5cGU9InRleHQvY3NzIj48L3N0eWxlPjwvZGVmcz48cGF0aCBkPSJNNDY5LjMzMyAyMTMuMzMzbDg1LjMzMyAwIDAgNTk3LjMzMy04NS4zMzMgMCAwLTU5Ny4zMzN6TTIxMy4zMzMgNDY5LjMzM2w1OTcuMzMzIDAgMCA4NS4zMzMtNTk3LjMzMyAwIDAtODUuMzMzeiIgcC1pZD0iMzMyNiIgZmlsbD0iI2I3YjdiNyI+PC9wYXRoPjwvc3ZnPg=="
+                                        alt="expand">
+                                </a>
+                                <a class="light-btn collapse-btn" href="javascript:;">
+                                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAA+UlEQVRYR+2WwRECMQhFPwVYhQ14sgALtwBPNmAVFoCTNXFiZkOAmSx72D0n+x8fCBCCPwrWxwFwODB0gJkvAN5E9LIULDOfAZyI6CndEwGy+BUAA7hrIbL4DViK/CFBdAEq8RKACqIRL3e7EBJAsrBEoYLoiIvgoxSoITziKSpNEQ4hvOIqgHRIEsi5MaWq7oqhA7/kf9tqTagNRFWs5b9qAMGJOiCTuDoFfwrrTix8lrfC5cDAhfkAnWLcJgVCJ8wvwtA21DwymjO9ibjfp9gTlefOfsdx7vm0DcUsJNUMiFvJLDug96xpGHlF3EvpDMH2n4cD4Q58AK/SvCE5v4JLAAAAAElFTkSuQmCC"
+                                        alt="collapse">
+                                </a>
+                            </div>
+
+                        </dl>
+
+                        <dl>
+                            <dt>商务合作</dt>
+
+                            <dd><a href="https://business.oppo.com/office/home/" target="_blank">企业业务</a></dd>
+
+
+                            <dd><a href="https://open.oppomobile.com/" target="_blank">开放平台</a></dd>
+
+
+                            <dd><a href="https://www.oppo.com/cn/service/policy/sourcing/" target="_blank">廉洁合规</a></dd>
+
+
+                            <dd><a href="https://www.oppo.com/cn/contact/" target="_blank">媒体联络</a></dd>
+
+
+                            <div class="cp-plus-minus-btns">
+                                <a class="dark-btn expand-btn" href="javascript:;">
+                                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAWklEQVRYR+2VSw4AMAQFuWwP1dN224iUsNDF2CJexk9l2HS4viAAAh0Cywzwrgw0AiAAga8J2D2vrPmd496JFwEEjBOIes4vgAAEIBDdiZS/8w1TBaIgBEDgAOMfFCGaPiXJAAAAAElFTkSuQmCC"
+                                        alt="expand">
+                                </a>
+                                <a class="dark-btn collapse-btn" href="javascript:;">
+                                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAA4klEQVRYR+2W0Q3CMAxErwMwRRfgiwEYnAH6xQJMwQAgVzIKKInvIiGDlP7W9r04FycLkr8lWR8TYHaA6cARwB3ATTTsCuAA4NrLiwBM/ATgAeAiQJj4GdhNvvUgegAu7gtgIUpxz21C9ABqhSIIOSfaAqWgEvuyRQRggUxhJqbqRQYggrD/bjjVL9Iobq3SRMuFRD556wTbAU+qQZQFJfFPcnbOtCBk8b8ESN2CVBP2zvnXjyEzZJiYoUGkFFZiqVE8UlDO+enr2NqU+iDxfUp9krHjeThOvYyGhVqJE2B24An0fVwhA2PqXQAAAABJRU5ErkJggg=="
+                                        alt="collapse">
+                                </a>
+                                <a class="light-btn expand-btn" href="javascript:;">
+                                    <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBzdGFuZGFsb25lPSJubyI/PjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+PHN2ZyB0PSIxNTc1OTc3OTEzNTkxIiBjbGFzcz0iaWNvbiIgdmlld0JveD0iMCAwIDEwMjQgMTAyNCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHAtaWQ9IjMzMjUiIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCI+PGRlZnM+PHN0eWxlIHR5cGU9InRleHQvY3NzIj48L3N0eWxlPjwvZGVmcz48cGF0aCBkPSJNNDY5LjMzMyAyMTMuMzMzbDg1LjMzMyAwIDAgNTk3LjMzMy04NS4zMzMgMCAwLTU5Ny4zMzN6TTIxMy4zMzMgNDY5LjMzM2w1OTcuMzMzIDAgMCA4NS4zMzMtNTk3LjMzMyAwIDAtODUuMzMzeiIgcC1pZD0iMzMyNiIgZmlsbD0iI2I3YjdiNyI+PC9wYXRoPjwvc3ZnPg=="
+                                        alt="expand">
+                                </a>
+                                <a class="light-btn collapse-btn" href="javascript:;">
+                                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAA+UlEQVRYR+2WwRECMQhFPwVYhQ14sgALtwBPNmAVFoCTNXFiZkOAmSx72D0n+x8fCBCCPwrWxwFwODB0gJkvAN5E9LIULDOfAZyI6CndEwGy+BUAA7hrIbL4DViK/CFBdAEq8RKACqIRL3e7EBJAsrBEoYLoiIvgoxSoITziKSpNEQ4hvOIqgHRIEsi5MaWq7oqhA7/kf9tqTagNRFWs5b9qAMGJOiCTuDoFfwrrTix8lrfC5cDAhfkAnWLcJgVCJ8wvwtA21DwymjO9ibjfp9gTlefOfsdx7vm0DcUsJNUMiFvJLDug96xpGHlF3EvpDMH2n4cD4Q58AK/SvCE5v4JLAAAAAElFTkSuQmCC"
+                                        alt="collapse">
+                                </a>
+                            </div>
+
+                        </dl>
+
+                        <dl>
+                            <dt>服务与支持</dt>
+
+                            <dd><a href="https://www.oppo.com/cn/contact/" target="_blank">联系我们</a></dd>
+
+
+                            <dd><a href="https://support.oppo.com/cn/service-center/" target="_blank">服务网点查询</a></dd>
+
+
+                            <dd><a href="https://www.coloros.com/" target="_blank">ColorOS</a></dd>
+
+
+                            <dd><a href="https://cloud.oppo.com/login.html" target="_blank">云服务</a></dd>
+
+
+                            <dd><a href="https://yihuan.oppo.com/static/index.html#/?channelId=100003"
+                                    target="_blank">以旧换新</a></dd>
+
+
+                            <dd><a href="https://support.oppo.com/cn/policy/" target="_blank">服务政策</a></dd>
+
+
+                            <dd><a href="https://security.oppo.com/cn/" target="_blank">安全响应中心</a></dd>
+
+
+                            <div class="cp-plus-minus-btns">
+                                <a class="dark-btn expand-btn" href="javascript:;">
+                                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAWklEQVRYR+2VSw4AMAQFuWwP1dN224iUsNDF2CJexk9l2HS4viAAAh0Cywzwrgw0AiAAga8J2D2vrPmd496JFwEEjBOIes4vgAAEIBDdiZS/8w1TBaIgBEDgAOMfFCGaPiXJAAAAAElFTkSuQmCC"
+                                        alt="expand">
+                                </a>
+                                <a class="dark-btn collapse-btn" href="javascript:;">
+                                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAA4klEQVRYR+2W0Q3CMAxErwMwRRfgiwEYnAH6xQJMwQAgVzIKKInvIiGDlP7W9r04FycLkr8lWR8TYHaA6cARwB3ATTTsCuAA4NrLiwBM/ATgAeAiQJj4GdhNvvUgegAu7gtgIUpxz21C9ABqhSIIOSfaAqWgEvuyRQRggUxhJqbqRQYggrD/bjjVL9Iobq3SRMuFRD556wTbAU+qQZQFJfFPcnbOtCBk8b8ESN2CVBP2zvnXjyEzZJiYoUGkFFZiqVE8UlDO+enr2NqU+iDxfUp9krHjeThOvYyGhVqJE2B24An0fVwhA2PqXQAAAABJRU5ErkJggg=="
+                                        alt="collapse">
+                                </a>
+                                <a class="light-btn expand-btn" href="javascript:;">
+                                    <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBzdGFuZGFsb25lPSJubyI/PjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+PHN2ZyB0PSIxNTc1OTc3OTEzNTkxIiBjbGFzcz0iaWNvbiIgdmlld0JveD0iMCAwIDEwMjQgMTAyNCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHAtaWQ9IjMzMjUiIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCI+PGRlZnM+PHN0eWxlIHR5cGU9InRleHQvY3NzIj48L3N0eWxlPjwvZGVmcz48cGF0aCBkPSJNNDY5LjMzMyAyMTMuMzMzbDg1LjMzMyAwIDAgNTk3LjMzMy04NS4zMzMgMCAwLTU5Ny4zMzN6TTIxMy4zMzMgNDY5LjMzM2w1OTcuMzMzIDAgMCA4NS4zMzMtNTk3LjMzMyAwIDAtODUuMzMzeiIgcC1pZD0iMzMyNiIgZmlsbD0iI2I3YjdiNyI+PC9wYXRoPjwvc3ZnPg=="
+                                        alt="expand">
+                                </a>
+                                <a class="light-btn collapse-btn" href="javascript:;">
+                                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAA+UlEQVRYR+2WwRECMQhFPwVYhQ14sgALtwBPNmAVFoCTNXFiZkOAmSx72D0n+x8fCBCCPwrWxwFwODB0gJkvAN5E9LIULDOfAZyI6CndEwGy+BUAA7hrIbL4DViK/CFBdAEq8RKACqIRL3e7EBJAsrBEoYLoiIvgoxSoITziKSpNEQ4hvOIqgHRIEsi5MaWq7oqhA7/kf9tqTagNRFWs5b9qAMGJOiCTuDoFfwrrTix8lrfC5cDAhfkAnWLcJgVCJ8wvwtA21DwymjO9ibjfp9gTlefOfsdx7vm0DcUsJNUMiFvJLDug96xpGHlF3EvpDMH2n4cD4Q58AK/SvCE5v4JLAAAAAElFTkSuQmCC"
+                                        alt="collapse">
+                                </a>
+                            </div>
+
+                        </dl>
+
+                        <dl>
+                            <dt>应用与下载</dt>
+
+
+                            <dd><a class="footer-quick-link" data-mb-href="https://www.heytap.com/app/download.html"
+                                    data-pc-href="https://www.oppo.com/cn/download-storeapp/"
+                                    href="https://www.oppo.com/cn/download-storeapp/" target="_blank">OPPO 商城 APP</a>
+                            </dd>
+
+                            <dd><a href="https://www.coloros.com/presoftware/index.html" target="_blank">预置软件公示</a></dd>
+
+
+                            <dd><a href="https://www.coloros.com/rom" target="_blank">OPPO 升级工具</a></dd>
+
+
+                            <dd><a href="https://www.oppo.com/cn/accessories/oppo-pad/the-met-wallpaper-download/"
+                                    target="_blank">OPPO Pad 官方壁纸下载</a></dd>
+
+
+                            <dd><a href="https://www.oppo.com/cn/log-to-rec709-download/" target="_blank">LOG专业调色文档</a>
+                            </dd>
+
+
+                            <div class="cp-plus-minus-btns">
+                                <a class="dark-btn expand-btn" href="javascript:;">
+                                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAWklEQVRYR+2VSw4AMAQFuWwP1dN224iUsNDF2CJexk9l2HS4viAAAh0Cywzwrgw0AiAAga8J2D2vrPmd496JFwEEjBOIes4vgAAEIBDdiZS/8w1TBaIgBEDgAOMfFCGaPiXJAAAAAElFTkSuQmCC"
+                                        alt="expand">
+                                </a>
+                                <a class="dark-btn collapse-btn" href="javascript:;">
+                                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAA4klEQVRYR+2W0Q3CMAxErwMwRRfgiwEYnAH6xQJMwQAgVzIKKInvIiGDlP7W9r04FycLkr8lWR8TYHaA6cARwB3ATTTsCuAA4NrLiwBM/ATgAeAiQJj4GdhNvvUgegAu7gtgIUpxz21C9ABqhSIIOSfaAqWgEvuyRQRggUxhJqbqRQYggrD/bjjVL9Iobq3SRMuFRD556wTbAU+qQZQFJfFPcnbOtCBk8b8ESN2CVBP2zvnXjyEzZJiYoUGkFFZiqVE8UlDO+enr2NqU+iDxfUp9krHjeThOvYyGhVqJE2B24An0fVwhA2PqXQAAAABJRU5ErkJggg=="
+                                        alt="collapse">
+                                </a>
+                                <a class="light-btn expand-btn" href="javascript:;">
+                                    <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBzdGFuZGFsb25lPSJubyI/PjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+PHN2ZyB0PSIxNTc1OTc3OTEzNTkxIiBjbGFzcz0iaWNvbiIgdmlld0JveD0iMCAwIDEwMjQgMTAyNCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHAtaWQ9IjMzMjUiIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCI+PGRlZnM+PHN0eWxlIHR5cGU9InRleHQvY3NzIj48L3N0eWxlPjwvZGVmcz48cGF0aCBkPSJNNDY5LjMzMyAyMTMuMzMzbDg1LjMzMyAwIDAgNTk3LjMzMy04NS4zMzMgMCAwLTU5Ny4zMzN6TTIxMy4zMzMgNDY5LjMzM2w1OTcuMzMzIDAgMCA4NS4zMzMtNTk3LjMzMyAwIDAtODUuMzMzeiIgcC1pZD0iMzMyNiIgZmlsbD0iI2I3YjdiNyI+PC9wYXRoPjwvc3ZnPg=="
+                                        alt="expand">
+                                </a>
+                                <a class="light-btn collapse-btn" href="javascript:;">
+                                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAA+UlEQVRYR+2WwRECMQhFPwVYhQ14sgALtwBPNmAVFoCTNXFiZkOAmSx72D0n+x8fCBCCPwrWxwFwODB0gJkvAN5E9LIULDOfAZyI6CndEwGy+BUAA7hrIbL4DViK/CFBdAEq8RKACqIRL3e7EBJAsrBEoYLoiIvgoxSoITziKSpNEQ4hvOIqgHRIEsi5MaWq7oqhA7/kf9tqTagNRFWs5b9qAMGJOiCTuDoFfwrrTix8lrfC5cDAhfkAnWLcJgVCJ8wvwtA21DwymjO9ibjfp9gTlefOfsdx7vm0DcUsJNUMiFvJLDug96xpGHlF3EvpDMH2n4cD4Q58AK/SvCE5v4JLAAAAAElFTkSuQmCC"
+                                        alt="collapse">
+                                </a>
+                            </div>
+
+                        </dl>
+
+                    </nav>
+                    <section class="contact">
+                        <a href="https://chat.oppo.com/chat/h5/v2/index.html?sysnum=9f06d616a05a43a9a50421f5f0982e4d&amp;channelid=2"
+                            target="_blank" class="live-chat-btn" style="margin-bottom: 0.12rem;">
+
+                            <img class="for-dark-theme lazyload"
+                                data-src="//image.oppo.com/content/dam/oppo/common/mkt/footer/icon/online-chat-lisht.svg"
+                                alt="24 小时全国热线">
+
+
+                            <img class="for-light-theme ls-is-cached lazyloaded"
+                                data-src="//image.oppo.com/content/dam/oppo/common/mkt/footer/icon/online-chat-dark.svg"
+                                alt="24 小时全国热线"
+                                src="//image.oppo.com/content/dam/oppo/common/mkt/footer/icon/online-chat-dark.svg">
+
+                            <span>在线客服</span>
+                        </a>
+                        <div class="contact-tab">
+                            <div class="tab-select" style="display: none;">
+                                <div class="tab-select-wrap">
+                                    <ul class="tab-select-content">
+
+                                        <li data-sel="sel1" class="cursor-select">
+                                            <p>24 小时全国热线</p>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="tab-card">
+
+                                <div class="tab-card-wrap-box tab-carditem-show" data-sel="sel1" style="border: none;">
+                                    <div class="tab-card-mobtitle" style="display: none;">
+                                        <p>24 小时全国热线</p>
+                                    </div>
+                                    <div class="tab-card-wrap" style="margin-bottom: 0px;">
+
+                                        <div class="tab-card-item">
+                                            <div class="tab-card-item-container">
+                                                <p class="qatar"><span></span><a href="tel:95018">24 小时全国热线：95018</a>
+                                                </p>
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contact-bottom">
+                            <ul class="social-media">
+                                <li>
+                                    <a href="https://weibo.com/oppo" class="media-link ">
+                                        <i class="fab fa-weibo"></i>
+                                    </a>
+
+                                </li>
+                                <li>
+                                    <a href="#" class="media-link wechat has-qrcode">
+                                        <i class="fab fa-weixin"></i>
+                                    </a>
+                                    <div class="qrcode">
+                                        <div class="txt">
+                                            <h4>OPPO 官方公众号</h4>
+                                            <p>微信扫码关注</p>
+                                        </div>
+                                        <img class="lazyload"
+                                            data-src="//image.oppo.com/content/dam/oppo/common/mkt/footer/WeChat.jpg.thumb.webp"
+                                            alt="OPPO 官方公众号" data-src-webp="true">
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="#" class="media-link alipay has-qrcode">
+                                        <i class="fab fa-alipay"></i>
+                                    </a>
+                                    <div class="qrcode">
+                                        <div class="txt">
+                                            <h4>支付宝生活号</h4>
+                                            <p>OPPO 商城</p>
+                                        </div>
+                                        <img class="lazyload"
+                                            data-src="//image.oppo.com/content/dam/oppo/common/mkt/store-app-download/ali-qrcode.png.thumb.webp"
+                                            alt="支付宝生活号" data-src-webp="true">
+                                    </div>
+                                </li>
+                            </ul>
+                            <a href="javascript:;" class="back-top-btn pc">
+                                返回顶部
+                                <i class="fas fa-chevron-up"></i>
+                            </a>
+                            <a class="languages mobile" href="https://www.oppo.com/en/choose-site/">
+                                China(简体中文)
+                            </a>
+                        </div>
+                    </section>
+                </section>
+                <section class="bottom">
+                    <ul class="links">
+
+                        <li>
+                            <a href="https://privacy.oppo.com/cn/policy/">
+                                隐私政策
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.oppo.com/cn/terms/">
+                                用户协议
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="https://www.oppo.com/cn/legal/">
+                                法律信息
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.oppo.com/cn/patent/">
+                                知识产权
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=44190002001935"
+                                target="_blank">
+                                粤公网安备 44190002001935号
+                            </a>
+                        </li>
+                        <li class="rights">
+                            <a href="https://beian.miit.gov.cn/" target="_blank">© 2004 - 2022 OPPO 版权所有
+                                粤ICP备08130115号</a>
+
+                        </li>
+                    </ul>
+                    <ul class="copyright">
+                        <li>
+                            <a class="languages pc" href="https://www.oppo.com/en/choose-site/">
+                                China(简体中文)
+                            </a>
+                        </li>
+                    </ul>
+                    <a href="javascript:;" class="back-top-btn mobile">
+                        <img class="lazyload"
+                            data-src="//code.oppo.com/etc.clientlibs/global-site/clientlibs/clientlib-design/resources/icons/backToTop.png">
+                    </a>
+                </section>
+            </footer>
+        </section>
+    </span>
+    <script src="./js/header.js"></script>
+    <script src="./index.js"></script>
+
+</body>
+
+</html>
